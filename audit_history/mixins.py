@@ -38,7 +38,7 @@ class AuditHistoryMixin(UpdateableModelMixin):
     def _create_history_entry(modification_time, current_user, event, **payload):
         entry = {'timestamp': modification_time.strftime(TIMESTAMP_FORMAT),
                  'event': event,
-                 'actor': None if not current_user or current_user.is_anonymous()
+                 'actor': None if not current_user or current_user.is_anonymous
                  else {
                      'id': current_user.id,
                      'email': current_user.email,
