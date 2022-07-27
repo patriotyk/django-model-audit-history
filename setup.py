@@ -10,10 +10,10 @@ with open(os.path.join(os.path.dirname(__file__), 'README.md')) as f:
 # allow setup.py to be run from any path
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
-version = '1.2.dev{build_time}'.format(build_time=int(time.time()))
+version = '1.3.dev{build_time}'.format(build_time=int(time.time()))
 
 requires = [
-    'Django<=2.2',
+    'Django<=3.0',
     'ipaddress',
     'six',
 ]
