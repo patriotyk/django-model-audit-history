@@ -1,9 +1,9 @@
-from django.contrib.postgres import fields
+from django.db.models import JSONField
 
 from audit_history.widgets import AuditHistoryWidget
 
 
-class AuditHistoryField(fields.JSONField):
+class AuditHistoryField(JSONField):
     """
     Custom field for saving audit history
     """
