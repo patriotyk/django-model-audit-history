@@ -13,7 +13,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 version = '1.3.dev{build_time}'.format(build_time=int(time.time()))
 
 requires = [
-    'Django<=4.2',
+    'Django<=4.2.15',
     'ipaddress',
     'six',
 ]
